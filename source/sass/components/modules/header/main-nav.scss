@@ -1,0 +1,61 @@
+.main-nav {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: rem(45px);
+  }
+}
+
+.main-nav__button-close {
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+  right: 40px;
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  background: url("../img/icons/cross.svg") no-repeat;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  position: relative;
+  z-index: 10;
+  margin: rem(60px 0 0 25px);
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    margin: 0;
+    display: flex;
+    gap: rem(67px);
+  }
+}
+
+.main-nav__link {
+  font-size: rem(24px);
+  line-height: rem(64px);
+  font-weight: 500;
+  color: $white;
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    font-size: rem(15px);
+    line-height: rem(30px);
+    font-weight: 500;
+  }
+}

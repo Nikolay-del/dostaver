@@ -1,0 +1,10 @@
+@import "../css/normalize.css";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+// Components
+// Header
+@import "components/modules/header/header.scss";
+@import "components/modules/header/main-nav.scss";
+// Contacts
+@import "components/modules/contacts/contacts.scss";

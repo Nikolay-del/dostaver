@@ -1,0 +1,73 @@
+.header {
+  position: relative;
+  margin-bottom: rem(25px);
+
+  @media (min-width: $desktop-width) {
+    margin: rem(36px 0 102px);
+  }
+}
+
+.header__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header__logo-wrap {
+  order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(17px 34px);
+  margin-bottom: rem(19px);
+
+  background: $white;
+  border-radius: rem(0 0 43px 43px);
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: block;
+    width: 18.8%;
+    padding: 0;
+    margin: 0;
+
+    background: none;
+    border-radius: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -42px;
+      left: 0;
+      width: 100%;
+      height: rem(123px);
+
+      background: $white;
+      border-radius: rem(0 0 43px 43px);
+    }
+  }
+}
+
+.header__logo img {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+  }
+}
+
+.header__button-open {
+  display: block;
+  width: rem(28px);
+  height: rem(21px);
+
+  background: url("../img/icons/sandwich.svg") no-repeat;
+  background-size: cover;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

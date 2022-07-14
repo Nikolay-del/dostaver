@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Golos";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("GolosText Regular"),
+    local("GolosText-Regular"),
+    url("../fonts/Golos/GolosText-Regular.woff") format("woff"),
+    url("../fonts/Golos/GolosText-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Golos";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local("GolosText Medium"),
+    local("GolosText-Medium"),
+    url("../fonts/Golos/GolosText-Medium.woff") format("woff"),
+    url("../fonts/Golos/GolosText-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Golos";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local("GolosText Demibold"),
+    local("GolosText-Demibold"),
+    url("../fonts/Golos/GolosText-Demibold.woff") format("woff"),
+    url("../fonts/Golos/GolosText-Demibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local("Museo Sans Cyrl Medium"),
+    local("Museo Sans Cyrl-Medium"),
+    url("../fonts/Museo/MuseoSansCyrl-500.woff") format("woff"),
+    url("../fonts/Museo/MuseoSansCyrl-500.woff2") format("woff2");
+}

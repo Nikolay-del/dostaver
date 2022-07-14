@@ -1,9 +1,11 @@
 header.header
-  .header__logo-wrap
-    a.header__logo(href=pageClass==="index-page" ? false : "index.html")
-      span.visually-hidden Ссылка на главную страницу
-      img(src="img/logo.svg" alt="Логотип 'Dostaver'")
-    button.header__button-open(name="button" type="button")
-      span.visually-hidden Открыть меню
-    include main-nav
-    include ../contacts/contacts
+  .container
+    .header__container
+      .header__logo-wrap
+        a.header__logo(href=pageClass==="index-page" ? false : "index.html")
+          span.visually-hidden Ссылка на главную страницу
+          img(src="img/logo.svg" alt="Логотип 'Dostaver'" width="137" height="36")
+        button.header__button-open(name="button" type="button")
+          span.visually-hidden Открыть меню
+      include main-nav
+      include ../contacts/contacts
