@@ -1,5 +1,9 @@
 extends layout/main
 
 block variables
-	-var title = 'Dostaver. Главная страница'
-	-var pageClass = 'index-page'
+  -var title = 'Dostaver. Главная страница'
+  -var pageClass = 'index-page'
+
+block content
+  main(class=pageClass)
+    include pages/index/promo
