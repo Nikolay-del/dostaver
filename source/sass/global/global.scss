@@ -6,6 +6,14 @@
 
 html {
   height: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 122%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 100%;
+  }
 }
 
 body {
@@ -64,6 +72,10 @@ img {
   max-width: 100%;
   margin: 0 auto;
   padding: rem(0 29px);
+
+  @media (min-width: $tablet-width) {
+    padding: rem(0 50px);
+  }
 
   @media (min-width: $desktop-width) {
     max-width: 1210px;

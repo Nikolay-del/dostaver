@@ -1,10 +1,23 @@
 .promo {
   padding-bottom: rem(284px);
+  margin-bottom: rem(38px);
+  // background: url("../img/decors/promo-warehouse--mobile.svg") no-repeat right bottom / 83% auto,
+  //   url("../img/decors/cloud.svg") no-repeat left rem(37px) bottom rem(228px) / 23% auto,
+  //   url("../img/decors/plus.svg") no-repeat left rem(57px) bottom rem(360px) / 4% auto,
+  //   url("../img/decors/plus.svg") no-repeat right rem(55px) bottom rem(390px) / 4% auto;
+  //
+  //@media (min-width: $tablet-width) {
+  // background: url("../img/decors/promo-warehouse--tablet.svg") no-repeat right bottom / 83% auto,
+  //   url("../img/decors/cloud.svg") no-repeat left rem(37px) bottom rem(228px) / 23% auto,
+  //   url("../img/decors/plus.svg") no-repeat left rem(57px) bottom rem(360px) / 4% auto,
+  //   url("../img/decors/plus.svg") no-repeat right rem(55px) bottom rem(390px) / 4% auto;
+  // }
+}
 
-  background: url("../img/decors/promo-warehouse--mobile.svg") no-repeat right rem(-145px) bottom 0,
-    url("../img/decors/cloud.svg") no-repeat left rem(37px) bottom rem(228px),
-    url("../img/decors/plus.svg") no-repeat left rem(57px) bottom rem(360px),
-    url("../img/decors/plus.svg") no-repeat right rem(55px) bottom rem(390px);
+.promo__container {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .promo__heading {
@@ -28,6 +41,19 @@
     line-height: rem(31px);
     font-weight: 400;
   }
+
+  @media (min-width: $desktop-width) {
+    div {
+      font-size: rem(72px);
+      line-height: rem(66px);
+    }
+
+    div:nth-child(2) {
+      width: 100%;
+      font-size: rem(42px);
+      line-height: rem(58px);
+    }
+  }
 }
 
 .promo__heading-text-stroke {
@@ -43,6 +69,13 @@
 
     background: url("../img/decors/promo-text-stroke--mobile.svg") no-repeat;
     background-size: rem(238px 33px);
+
+    @media (min-width: $desktop-width) {
+      width: rem(415px);
+      height: rem(64px);
+
+      background-size: rem(414px 64px);
+    }
   }
 }
 
@@ -50,6 +83,7 @@
   position: relative;
   width: 92%;
   margin: rem(0 auto 32px);
+
   font-weight: 400;
   font-size: rem(16px);
   line-height: rem(24px);
@@ -64,6 +98,13 @@
     height: rem(14px);
 
     background: url("../img/decors/plus.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 64%;
+
+    font-size: rem(20px);
+    line-height: rem(32px);
   }
 }
 
@@ -99,6 +140,13 @@
   span {
     margin-top: -10px;
   }
+
+.promo__deadline {
+  position: absolute;
+  top: rem(157px);
+  left: rem(43px);
+
+  transform: rotate(-21.24deg);
 }
 
 .promo__deadline-description {
@@ -112,5 +160,9 @@
 
   strong {
     font-weight: 600;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: rem(136px);
   }
 }
