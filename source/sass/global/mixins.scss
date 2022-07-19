@@ -1,0 +1,20 @@
+@mixin h2 ($color, $text-align) {
+  font-weight: 400;
+  font-size: rem(36px);
+  line-height: rem(40px);
+  text-align: $text-align;
+  color: $color;
+
+  @media (min-width: $desktop-width) {
+    font-size: rem(46px);
+    line-height: rem(55px);
+  }
+}
+
+@mixin text ($color, $text-align) {
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: rem(30px);
+  text-align: $text-align;
+  color: $color;
+}

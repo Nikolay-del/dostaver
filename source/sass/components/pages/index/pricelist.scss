@@ -1,0 +1,81 @@
+.pricelist__heading {
+  margin-bottom: rem(15px);
+
+  @include h2($white, center);
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: rem(25px);
+  }
+}
+
+
+.pricelist__text {
+  margin-bottom: rem(31px);
+  padding: rem(0 30px);
+
+  @include text($white, center);
+}
+
+.pricelist__table {
+  width: 83.5%;
+  margin: 0 auto;
+
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  font-weight: 600;
+  font-size: rem(14px);
+  line-height: rem(15px);
+
+  th,
+  td {
+    border: rem(1px) solid $white;
+  }
+
+  tr:not(:first-child) {
+
+    height: rem(44px);
+
+    td:first-child {
+      padding-left: rem(18px);
+
+      background: $white;
+
+      color: $main-purple;
+    }
+  }
+}
+
+.pricelist__col-1 {
+  height: rem(44px);
+
+  td:first-child {
+    padding-left: rem(15px);
+  }
+}
+
+.pricelist__thead {
+  height: rem(60px);
+
+  tr th:first-child {
+    width: 30%;
+    padding-left: 15px;
+
+    border-top-left-radius: rem(38px);
+
+    text-align: left;
+  }
+
+  tr th:last-child {
+    border-top-right-radius: rem(38px);
+  }
+
+  th:not(:first-child) {
+    width: 16.9%;
+
+    background: $white;
+
+    color: $main-purple;
+  }
+}

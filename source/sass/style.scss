@@ -1,5 +1,6 @@
 @import "../css/normalize.css";
 @import "global/variables.scss";
+@import "global/mixins.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
 // Components
@@ -12,3 +13,5 @@
 @import "components/modules/feedback/feedback.scss";
 // Pages/Index
 @import "components/pages/index/promo.scss";
+@import "components/pages/index/pricelist.scss";
+@import "components/pages/index/processes.scss";
