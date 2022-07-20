@@ -1,0 +1,49 @@
+.legally {
+  padding-bottom: rem(310px);
+  margin-bottom: rem(48px);
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: rem(438px);
+    margin-bottom: rem(132px);
+  }
+}
+
+.legally__heading {
+  margin: rem(0 0 24px);
+
+  @include h2($white, left);
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: rem(28px);
+
+    text-align: center;
+  }
+}
+
+.legally__text {
+  width: 89%;
+  margin: rem(0 0 30px);
+
+  @include text($white, left);
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: rem(30px);
+
+    text-align: center;
+
+    &:nth-child(4) {
+      width: 47%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.legally__feedback {
+  margin-top: rem(42px);
+
+  @media (min-width: $desktop-width) {
+    width: 56%;
+    margin-top: rem(44px);
+  }
+}
