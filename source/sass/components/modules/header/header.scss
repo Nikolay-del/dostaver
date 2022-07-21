@@ -64,7 +64,7 @@
   height: rem(21px);
 
   background: url("../img/icons/sandwich.svg") no-repeat;
-  background-size: cover;
+  background-size: rem(28px 21px);
   border: none;
 
   @media (min-width: $desktop-width) {

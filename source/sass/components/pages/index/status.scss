@@ -1,0 +1,108 @@
+.status {
+  margin-bottom: rem(32px);
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: rem(119px);
+  }
+}
+
+.status__heading {
+  margin: rem(0 0 14px);
+
+  @include h2($white, left);
+
+  @media (min-width: $desktop-width) {
+    width: 78%;
+    margin: rem(0 auto 26px);
+
+    text-align: center;
+  }
+}
+
+.status__text {
+  margin: rem(0 0 22px);
+
+  @include text($white, left);
+
+  b {
+    font-weight: 600;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 81%;
+    margin: rem(0 auto 45px);
+
+    text-align: center;
+  }
+}
+
+.status__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: rem(18px);
+
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: rem(282px);
+    gap: rem(30px);
+  }
+}
+
+.status__item {
+  padding: rem(86px 15px 44px 17px);
+
+  background-repeat: no-repeat;
+  border: rem(2px) solid $white;
+  border-radius: rem(38px);
+
+  &__phone {
+    background-image: url("../img/icons/icon-phone.svg");
+    background-position: center rem(42px);
+  }
+
+  &__notification {
+    background-image: url("../img/icons/icon-notification.svg");
+    background-position: center rem(41px);
+  }
+
+  &__delivery {
+    background-image: url("../img/icons/icon-delivery.svg");
+    background-position: center rem(43px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: rem(105px 26px 0);
+
+    &__phone {
+      background-position: center rem(51px);
+    }
+
+    &__notification {
+      background-position: center rem(49px);
+    }
+
+    &__delivery {
+      background-position: center rem(51px);
+    }
+  }
+}
+
+.status__name {
+  margin: rem(0 0 14px);
+
+  font-weight: 600;
+  font-size: rem(20px);
+  line-height: rem(24px);
+  text-align: center;
+}
+
+.status__desc {
+  margin: 0;
+
+  font-size: rem(16px);
+  line-height: rem(28px);
+  text-align: center;
+}
