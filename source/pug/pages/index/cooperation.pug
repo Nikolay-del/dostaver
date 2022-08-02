@@ -1,0 +1,17 @@
+section.cooperation
+  .container
+    .cooperation__container
+      h2.cooperation__heading.
+        Отправляйте заявку,
+        чтобы обсудить условия сотрудничества
+      p.cooperation__text.
+        или свяжитесь с нами как вам будет удобно —
+        по телефону либо в одном из мессенджеров
+      form.cooperation__feedback.feedback(action="")
+        input.feedback__input(type="tel" name="tel" placeholder="Введите номер телефона")
+        button.feedback__button(type="submit") Обсудить сотрудничество
+        label.feedback__privacy-policy
+          input.feedback__input-checkbox#privacy-policy(type="checkbox" name="privacy-policy")
+          span.feedback__checkbox
+          span Я согласен с
+            a(href="#")  политикой конфиденциальности

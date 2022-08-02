@@ -1,8 +1,10 @@
 .guarantee {
   overflow: hidden;
+  margin-bottom: rem(28px);
 
   @media (min-width: $desktop-width) {
     overflow: visible;
+    margin-bottom: rem(100px);
   }
 }
 
@@ -137,7 +139,6 @@
       background: url("../img/icons/text-decoration-link-purple.svg") repeat-x;
     }
 
-
     &::after {
       content: "";
       position: absolute;
@@ -177,4 +178,8 @@
 
 .guarantee__abouts {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    height: rem(980px);
+  }
 }

@@ -97,7 +97,8 @@
     width: rem(14px);
     height: rem(14px);
 
-    background: url("../img/decors/plus.svg");
+    background-image: url("../img/decors/plus.svg");
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,11 +144,39 @@
 }
 
 .promo__deadline {
-  position: absolute;
-  top: rem(157px);
-  left: rem(43px);
+  position: relative;
 
-  transform: rotate(-21.24deg);
+  &::after {
+    content: "";
+    position: absolute;
+    top: rem(111px);
+    left: rem(28px);
+    width: rem(14px);
+    height: rem(14px);
+
+    background-image: url("../img/decors/plus.svg");
+    background-size: cover;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: rem(51px);
+    right: rem(26px);
+    width: rem(14px);
+    height: rem(14px);
+
+    background-image: url("../img/decors/plus.svg");
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: rem(157px);
+    left: rem(43px);
+
+    transform: rotate(-21.24deg);
+  }
 }
 
 .promo__deadline-description {

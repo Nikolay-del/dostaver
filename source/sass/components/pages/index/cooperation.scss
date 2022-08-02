@@ -1,0 +1,28 @@
+.cooperation {
+  margin-bottom: rem(54px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: rem(94px);
+  }
+}
+
+.cooperation__heading {
+  margin: rem(0 auto 14px);
+
+  @include h2($white, center);
+
+  @media (min-width: $tablet-width) {
+    width: 82%;
+  }
+}
+
+.cooperation__text {
+  margin: rem(0 auto 30px);
+  width: 98%;
+
+  @include text($white, center);
+
+  @media (min-width: $tablet-width) {
+    width: 51%;
+  }
+}

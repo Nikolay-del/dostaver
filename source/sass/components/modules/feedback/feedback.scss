@@ -86,9 +86,9 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -3px;
+      bottom: rem(-3px);
       width: 100%;
-      height: 2px;
+      height: rem(2px);
 
       background: url("../img/icons/text-decoration-link.svg") repeat-x;
     }
